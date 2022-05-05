@@ -12,6 +12,17 @@
         background-image: url("./moon-over-waterfall.jpg");
         background-size: cover;
       }
+      #player {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
     </style>
     <script>
@@ -100,6 +111,12 @@
   <body>
     <div id="container">
       <canvas id="pixie"></canvas>
+    </div>
+    <div id="player">
+      <audio controls>
+        <source src="./BeKindToYou.aif" type="audio/aiff">
+        Your browser does not support the audio element.
+      </audio>
     </div>
   </body>
 </html>
